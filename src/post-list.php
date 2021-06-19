@@ -1,11 +1,15 @@
+<?php
+$pagination = createPagination($posts);
+?>
+
 <table bordercolordark="#000000" width="600" bordercolor="#000000" border="0" bgcolor="#FFFFFF" background="/templates/retro/public/Fine_Speckled0001A16B.gif">
   <tr>
-    <td>
+    <td colspan="2">
       <?php
-      $len = count($posts);
+      $len = count($pagination->posts);
       $i = 0;
       ?>
-      <?php foreach ($posts as $post) : ?>
+      <?php foreach ($pagination->posts as $post) : ?>
         <?php $isLast = $i == $len - 1; ?>
         <?php $image = $post->full_path . $post->image; ?>
         <table width="600" cellpadding="0" cellspacing="0" border="0">
@@ -48,5 +52,21 @@
 </table>
 <?php endforeach; ?>
 </td>
+</tr>
+<tr>
+  <?php if ($pagination->previous_page != null) : ?>
+    <td>
+      <a href="<?= $pagination->previous_page ?>"><img src="/templates/retro/public/arrow_text1_left.gif"></a>
+    </td>
+  <?php endif; ?>
+  <?php if ($pagination->next_page != null) : ?>
+    <td align="right">
+      <?php if ($custom_next_link) : ?>
+        <a href="<?= $custom_next_link["url"] ?>"><img src="<?= $custom_next_link["icon"] ?>"></a>
+      <?php else : ?>
+        <a href="<?= $pagination->next_page ?>"><img src="/templates/retro/public/arrow_text1_right.gif"></a>
+      <?php endif; ?>
+    </td>
+  <?php endif; ?>
 </tr>
 </table>
