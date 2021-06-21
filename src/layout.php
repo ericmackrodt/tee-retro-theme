@@ -15,9 +15,7 @@
     <center>
         <img src="/templates/retro/public/logo_smaller.gif" alt="The Eric Experiment">
         <br>
-        <img src="/templates/retro/public/anibar.gif">
         <?php $this->insert('retro::main-menu') ?>
-        <img src="/templates/retro/public/anibar.gif">
     </center>
 
     <?= $this->section('content') ?>
