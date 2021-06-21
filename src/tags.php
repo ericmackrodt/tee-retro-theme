@@ -1,4 +1,4 @@
-<table bordercolordark="#000000" width="600" border="0">
+<table bordercolordark="#000000" border="0">
   <tr>
     <td align="center">
       <font size="3">
@@ -12,9 +12,7 @@
       ?>
       <?php foreach ($tags as $id => $tag) : ?>
         <?php $isLast = $i == $len - 1; ?>
-        <a href="/tag?id=<?= $tag->id ?>">
-          <?= $this->e($tag->name) ?> (<?= count($tag->slugs) ?>)
-        </a>
+        <a href="/tag?id=<?= $tag->id ?>"><?= $this->e($tag->name) ?> (<?= count($tag->slugs) ?>)</a>
         <?php if (!$isLast) : ?>
           |
         <?php endif; ?>

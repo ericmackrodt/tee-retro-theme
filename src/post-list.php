@@ -2,9 +2,9 @@
 $pagination = createPagination($posts);
 ?>
 
-<table bordercolordark="#000000" width="600" bordercolor="#000000" border="0" bgcolor="#FFFFFF" background="/templates/retro/public/Fine_Speckled0001A16B.gif">
+<table bordercolordark="#000000" width="600" bordercolor="#000000" border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="5" background="/templates/retro/public/Fine_Speckled0001A16B.gif">
   <tr>
-    <td colspan="2">
+    <td>
       <?php
       $len = count($pagination->posts);
       $i = 0;
@@ -16,7 +16,7 @@ $pagination = createPagination($posts);
           <tr>
             <td width="143" valign="top">
               <a href="/post/<?= $post->slug ?>">
-                <img src="/img.php?p=<?= $image ?>&w=143&fit=cover&aspectRatio=16:9" border="0" /></a>
+                <img src="/img.php?p=<?= $image ?>&w=143&fit=cover&aspectRatio=16:9&output=jpg" border="0" /></a>
             </td>
     </td>
     <td width="10" valign="top">
@@ -41,11 +41,7 @@ $pagination = createPagination($posts);
 
   <?php if (!$isLast) : ?>
     <tr>
-      <td colspan="3" width="600" valign="top">
-        <img height="10" width="1" src="/templates/retro/public/nothing.gif"><br>
-        <img height="1" width="600" src="/templates/retro/public/black_pixel.gif"><br>
-        <img height="10" width="1" src="/templates/retro/public/nothing.gif">
-      </td>
+      <td colspan="3" width="600" valign="top"><img height="10" width="1" src="/templates/retro/public/nothing.gif"><br><img height="1" width="600" src="/templates/retro/public/black_pixel.gif"><br><img height="10" width="1" src="/templates/retro/public/nothing.gif"></td>
     </tr>
   <?php endif; ?>
   <?php $i++ ?>
@@ -54,19 +50,25 @@ $pagination = createPagination($posts);
 </td>
 </tr>
 <tr>
-  <?php if ($pagination->previous_page != null) : ?>
-    <td>
-      <a href="<?= $pagination->previous_page ?>"><img src="/templates/retro/public/arrow_text1_left.gif"></a>
-    </td>
-  <?php endif; ?>
-  <?php if ($pagination->next_page != null) : ?>
-    <td align="right">
-      <?php if ($custom_next_link) : ?>
-        <a href="<?= $custom_next_link["url"] ?>"><img src="<?= $custom_next_link["icon"] ?>"></a>
-      <?php else : ?>
-        <a href="<?= $pagination->next_page ?>"><img src="/templates/retro/public/arrow_text1_right.gif"></a>
-      <?php endif; ?>
-    </td>
-  <?php endif; ?>
+  <td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <?php if ($pagination->previous_page != null) : ?>
+          <td>
+            <a href="<?= $pagination->previous_page ?>"><img src="/templates/retro/public/arrow_text1_left.gif" border="0"></a>
+          </td>
+        <?php endif; ?>
+        <?php if ($pagination->next_page != null) : ?>
+          <td align="right">
+            <?php if ($custom_next_link) : ?>
+              <a href="<?= $custom_next_link["url"] ?>"><img src="<?= $custom_next_link["icon"] ?>" border="0"></a>
+            <?php else : ?>
+              <a href="<?= $pagination->next_page ?>"><img src="/templates/retro/public/arrow_text1_right.gif" border="0"></a>
+            <?php endif; ?>
+          </td>
+        <?php endif; ?>
+      </tr>
+    </table>
+  </td>
 </tr>
 </table>

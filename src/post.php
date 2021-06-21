@@ -23,37 +23,31 @@
 <?php $this->end() ?>
 
 <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br><img src="/templates/retro/public/black_pixel.gif" width="100%" height="1"><br><img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
-<center>
-  <table border="0" width="600">
-    <tr>
-      <td>
-        <font face="arial" size="-1">
-          <font size="5">
-            <b><?= $this->e($data->title); ?></b>
-          </font><br>
-          <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
-          <img src="/templates/retro/public/black_pixel.gif" width="100%" height="1"><br>
-          <img src="/templates/retro/public/nothing.gif" width="1" height="10"><br>
-          <b>Published: </b><?= $this->e($data->date); ?>
-          <br />
-          <b>Tags: </b>
-          <?php
-          $len = count($data->tags);
-          $i = 0;
-          ?>
-          <?php foreach ($data->tags as $id => $tag) : ?>
-            <?php $isLast = $i == $len - 1; ?>
-            <a href="/tag?id=<?= $tag->id ?>">
-              <?= $this->e($tag->name) ?>
-            </a>
-            <?php if (!$isLast) : ?>
-              ,
-            <?php endif; ?>
-            <?php $i++ ?>
-          <?php endforeach; ?>
-          <?= $data->content ?>
-        </font>
-      </td>
-    </tr>
-  </table>
-</center>
+
+<table border="0">
+  <tr>
+    <td>
+      <font face="arial" size="-1">
+        <font size="5">
+          <b><?= $this->e($data->title); ?></b>
+        </font><br>
+        <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
+        <img src="/templates/retro/public/black_pixel.gif" width="100%" height="1"><br>
+        <img src="/templates/retro/public/nothing.gif" width="1" height="10"><br>
+        <b>Published: </b><?= $this->e($data->date); ?>
+        <br />
+        <b>Tags: </b>
+        <?php
+        $len = count($data->tags);
+        $i = 0;
+        ?>
+        <?php foreach ($data->tags as $id => $tag) : ?>
+          <?php $isLast = $i == $len - 1; ?>
+          <a href="/tag?id=<?= $tag->id ?>"><?= $this->e($tag->name) ?></a><?php if (!$isLast) : ?>, <?php endif; ?>
+          <?php $i++ ?>
+        <?php endforeach; ?>
+        <?= $data->content ?>
+      </font>
+    </td>
+  </tr>
+</table>
