@@ -54,6 +54,9 @@
         <a href="/windows3x/essentialsoftware#mirc591">
             <img src="/templates/retro/public/mircban.gif" border="0">
         </a>
+        <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!" target="_blank">
+            <img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0>
+        </a>
         <br>
         Copyright © 1988-2020 The Eric Experiment
         <br>
