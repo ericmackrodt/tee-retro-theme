@@ -14,7 +14,9 @@
       </td>
     </tr>
   </table>
-  <br><img src="/templates/retro/public/nothing.gif" width="1" height="5"><br><img src="/templates/retro/public/anibar2.gif" width="100%" height="16"><br><img src="/templates/retro/public/nothing.gif" width="1" height="5">
+  <br><img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
+  <img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif"><img src="/templates/retro/public/lemmings_walking.gif">
+  <br><img src="/templates/retro/public/nothing.gif" width="1" height="10"><br>
   <font size="4">
     <b>Latest parts of the experiment</b>
   </font><br><img src="/templates/retro/public/nothing.gif" width="1" height="5"><br><img src="/templates/retro/public/black_pixel.gif" width="100%" height="1"><br><img src="/templates/retro/public/nothing.gif" width="1" height="5">
