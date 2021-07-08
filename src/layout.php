@@ -43,20 +43,12 @@
         <?php $this->insert('retro::tags') ?>
         <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br><img src="/templates/retro/public/black_pixel.gif" width="100%" height="1"><br><img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
 
-        <a href="/windows3x/essentialsoftware#netscapecommunicator407">
-            <img src="/templates/retro/public/netscap4.gif" alt="Compatible with Netscape" border="0" />
-        </a>
-        <a href="/windows3x/essentialsoftware#internetexplorer501">
-            <img src="/templates/retro/public/ie.gif" width="88" height="31" alt="Compatible with IE" border="0" />
-        </a>
+        <a href="/windows3x/essentialsoftware#netscapecommunicator407"><img src="/templates/retro/public/netscap4.gif" alt="Compatible with Netscape" border="0" /></a>
+        <a href="/windows3x/essentialsoftware#internetexplorer501"><img src="/templates/retro/public/ie.gif" width="88" height="31" alt="Compatible with IE" border="0" /></a>
         <img src="/templates/retro/public/800x600.gif" border="0">
         <img src="/templates/retro/public/frontpg.gif" border="0">
-        <a href="/windows3x/essentialsoftware#mirc591">
-            <img src="/templates/retro/public/mircban.gif" border="0">
-        </a>
-        <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!" target="_blank">
-            <img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0>
-        </a>
+        <a href="/windows3x/essentialsoftware#mirc591"><img src="/templates/retro/public/mircban.gif" border="0"></a>
+        <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!" target="_blank"><img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0></a>
         <br>
         Copyright © 1988-2020 The Eric Experiment
         <br>
