@@ -21,8 +21,6 @@
     <?= $this->section('content') ?>
 
     <center>
-        <br>
-        <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
         <table border="0" celspacing="0" celpadding="0" width="100%">
             <tr>
                 <td align="left">
@@ -39,9 +37,7 @@
             </tr>
         </table>
         <br>
-        <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
         <?php $this->insert('retro::tags') ?>
-        <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br><img src="/templates/retro/public/black_pixel.gif" width="100%" height="1"><br><img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
 
         <a href="/windows3x/essentialsoftware#netscapecommunicator407"><img src="/templates/retro/public/netscap4.gif" alt="Compatible with Netscape" border="0" /></a>
         <a href="/windows3x/essentialsoftware#internetexplorer501"><img src="/templates/retro/public/ie.gif" width="88" height="31" alt="Compatible with IE" border="0" /></a>
