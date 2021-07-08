@@ -13,9 +13,13 @@
 
 <body bgcolor="#000000" text="#fffffff" background="/templates/retro/public/starfiel.gif" vlink="#00FF00" link="#00FF00">
     <center>
-        <img src="/templates/retro/public/logo_smaller.gif" alt="The Eric Experiment">
-        <br>
-        <?php $this->insert('retro::main-menu') ?>
+        <table cellspacing="2" cellpadding="0" border="0" width="600">
+            <tr>
+                <td valign="center"><img src="/templates/retro/public/logo-small.gif" alt="The Eric Experiment"></td>
+                <td align="right" valign="center"><?php $this->insert('retro::main-menu') ?></td>
+            </tr>
+        </table>
+        <img src="/templates/retro/public/anibar.gif">
     </center>
 
     <?= $this->section('content') ?>
@@ -49,7 +53,7 @@
         Copyright © 1988-2020 The Eric Experiment
         <br>
 
-        <img src="/templates/retro/public/neon.gif">
+        <img src="/templates/retro/public/neon-smaller.gif">
         <br>
         <img src="/templates/retro/public/skyline.gif">
     </center>
