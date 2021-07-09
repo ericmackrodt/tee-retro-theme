@@ -19,7 +19,9 @@
                 <td align="right" valign="center"><?php $this->insert('retro::main-menu') ?></td>
             </tr>
         </table>
+        <br>
         <img src="/templates/retro/public/anibar.gif">
+        <br>
     </center>
 
     <?= $this->section('content') ?>
