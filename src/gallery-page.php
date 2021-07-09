@@ -23,7 +23,7 @@
               <a href="<?= $nextImage ?>">[next image]</a>
             <?php endif; ?><br>
             <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
-            <img src="/img.php?p=<?= $currentImage->url ?>&w=600&fit=cover"><br>
+            <img src="<?= getGalleryImage($currentImage->url) ?>"><br>
             <img src="/templates/retro/public/nothing.gif" width="1" height="5"><br>
             <?php if ($previousImage != null) : ?>
               <a href="<?= $previousImage ?>">[previous image]</a>

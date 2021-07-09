@@ -4,7 +4,7 @@
       <font size="-1" face="arial"><b><a name="<?= $data->id ?>"></a><?= $this->e($data->name) ?></b></font>
     </td>
     <td bgcolor="#777777" align="right" valign="top">
-      <a href="${url}" target="_blank"><img src="/img.php?p=/templates/retro/public/floppy.png&w=12" alt="Download" border="0"><img src="/templates/retro/public/nothing.gif" width="5" height="12" border="0"></a>
+      <a href="${url}" target="_blank"><img src="/templates/retro/public/floppy.gif" alt="Download" border="0"><img src="/templates/retro/public/nothing.gif" width="5" height="12" border="0"></a>
       <a href="<?= $data->url ?>" target="_blank"><font size="2" face="arial"><?= $data->file ?></font></a>
     </td>
   </tr>

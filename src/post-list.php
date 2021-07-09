@@ -11,12 +11,12 @@ $pagination = createPagination($posts);
       ?>
       <?php foreach ($pagination->posts as $post) : ?>
         <?php $isLast = $i == $len - 1; ?>
-        <?php $image = $post->full_path . $post->image; ?>
+        <?php $image = getPostThumbnail($post->image) ?>
         <table width="600" cellpadding="0" cellspacing="5" border="0">
           <tr>
             <td width="143">
               <a href="/post/<?= $post->slug ?>">
-                <img src="/img.php?p=<?= $image ?>&w=143&fit=cover&aspectRatio=16:9&output=jpg&compression=50" border="0" /></a>
+                <img src="<?= $image ?>" border="0" /></a>
             </td>
             <td valign="top">
               <table cellpadding="0" cellspacing="5" border="0">
