@@ -21,6 +21,8 @@
     <b>Latest parts of the experiment</b>
   </font><br>
   <?php $this->insert('retro::categories') ?>
+  <br>
   <?php $this->insert('retro::post-list', ['posts' => $posts, 'custom_next_link' => ['url' => '/posts?page=1', 'icon' => '/templates/retro/public/more_md_wht.gif']]) ?>
+  <br>
   <?php $this->insert('retro::categories') ?>
 </center>
