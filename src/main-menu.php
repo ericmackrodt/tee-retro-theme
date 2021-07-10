@@ -14,7 +14,7 @@ $offset = 0;
 
       if ($items_to_add > 0) {
         $empty_array = array_fill(0, $per_row - $slice_count, null);
-        array_unshift($slice, $empty_array);
+        array_unshift($slice, ...$empty_array);
       }
       ?>
 
