@@ -18,7 +18,7 @@ $pagination = createPagination($posts);
               <a href="/post/<?= $post->slug ?>">
                 <img src="<?= $image ?>" border="0" /></a>
             </td>
-            <td valign="top">
+            <td width="447" valign="top" align="left">
               <table cellpadding="0" cellspacing="5" border="0">
                 <tr>
                   <td>
