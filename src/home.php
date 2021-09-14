@@ -25,4 +25,11 @@
   <?php $this->insert('retro::post-list', ['posts' => $posts, 'custom_next_link' => ['url' => '/posts?page=1', 'icon' => '/templates/retro/public/more_md_wht.gif']]) ?>
   <br>
   <?php $this->insert('retro::categories') ?>
+  <!-- Start Old'aVista Banner Code -->
+  <p>
+    <a href="http://www.oldavista.com/" rel="embed-banner" title="Old'aVista: The most powerful guide to the OLD internet!" target="_blank">
+      <img src="//www.oldavista.com/public/banner.gif" width="468" height="60" border="0">
+    </a>
+  </p>
+  <!-- End Old'aVista Banner Code -->
 </center>
